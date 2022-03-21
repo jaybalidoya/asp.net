@@ -1,0 +1,84 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet"
+</head>
+<html>
+<body>
+    <main>
+
+        <div class="header-text-prb">PROBINSYANO GAME HOSTING</div>
+
+        <div class="row">
+            <div class="column" style="background-color:#333333;">
+                <h2>SIMPLIFIED</h2>
+                <p>Automate fleets of game servers across multiple Agones clusters, schedule scaling events, and monitor the health of your fleets using familiar tools like Terraform.</p>
+            </div>
+            <div class="column" style="background-color:#333333;">
+                <h2>FLEXIBLE</h2>
+                <p>Benefit from the flexibility of open source and avoid vendor lock in. Opt out of management at any time to manually manage game server fleets. Run your game servers at blazing-fast clock speeds of up to 3.8 Ghz.</p>
+            </div>
+            <div class="column" style="background-color:#333333;">
+                <h2>GLOBAL REACH</h2>
+                <p>Ensure your game servers are close to your players, with Probinsyano Game Hosting globally distributed regions, all connected by our high-quality private network.</p>
+            </div>
+        </div>
+
+       
+        <div class="slideshow-container">
+
+            
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="~/images/server.png" style="width:100%">
+                <div class="text">Probinsyano Game Hosting | First VPS SERVER Located in Singapore</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="~/images/prb3.jpg" style="width:100%">
+                <div class="text">Probinsyano Game Hosting | FIVEM Server</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="~/images/prbmobilebg.jpg" style="width:100%">
+                <div class="text">Probinsyano Game Hosting | FIVEM Server</div>
+            </div>
+
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+    </main>
+
+</body>
+</html>
+
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 3000);
+    }
+</script>
